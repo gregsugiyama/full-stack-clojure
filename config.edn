@@ -1,0 +1,3 @@
+{:postgres-user    #env POSTGRES_USER
+ :postgres-subname #env POSTGRES_SUBNAME
+ :postgres-pass    #env POSTGRES_PASS}
