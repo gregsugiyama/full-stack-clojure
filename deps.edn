@@ -5,7 +5,8 @@
         http-kit                  {:mvn/version "2.5.0"}
         metosin/reitit            {:mvn/version "0.5.2"}
         org.clojure/clojure       {:mvn/version "1.10.1"}
-        org.postgresql/postgresql {:mvn/version "42.2.2"}}
+        org.postgresql/postgresql {:mvn/version "42.2.2"}
+        ring-cors                 {:mvn/version "0.1.13"}}
  :aliases {:run   {:main-opts ["-m" "backend.core"]}
            :nREPL {:extra-deps {cider/cider-nrepl {:mvn/version "0.25.4"}
                                 cider/piggieback  {:mvn/version "0.4.2"}

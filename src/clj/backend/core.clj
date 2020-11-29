@@ -7,7 +7,8 @@
    [reitit.ring.middleware.muuntaja  :refer [format-negotiate-middleware
                                              format-request-middleware
                                              format-response-middleware]]
-   [taoensso.timbre :as timbre]))
+   [ring.middleware.cors             :refer [wrap-cors]]
+   [taoensso.timbre                  :as timbre]))
 
 (def port 4000)
 
@@ -20,7 +21,10 @@
                      {:status 200
                       :body   "pong"})}]]
     {:data {:muuntaja   m/instance ; Can be configured with additional encoding options via m/create + { options }
-            :middleware [format-negotiate-middleware
+            :middleware [[wrap-cors 
+                          :access-control-allow-origin [#"http://localhost:4200"]
+                          :access-control-allow-methods [:get :put :post :delete]]
+                         format-negotiate-middleware
                          format-request-middleware
                          exception-middleware
                          format-response-middleware]}})

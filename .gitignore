@@ -1,4 +1,7 @@
+node_modules
 .nrepl-port
 .calva
 .cpcache
 .envrc
+.shadow-cljs
+resources/public/js
