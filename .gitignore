@@ -5,3 +5,4 @@ node_modules
 .envrc
 .shadow-cljs
 resources/public/js
+.clj-kondo
