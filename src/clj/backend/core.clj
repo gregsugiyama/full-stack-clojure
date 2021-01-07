@@ -18,10 +18,10 @@
   (ring/ring-handler
    (ring/router
     [["/ping" {:get (fn [req]
-                     {:status 200
-                      :body   "pong"})}]]
+                      {:status 200
+                       :body   "pong"})}]]
     {:data {:muuntaja   m/instance ; Can be configured with additional encoding options via m/create + { options }
-            :middleware [[wrap-cors 
+            :middleware [[wrap-cors
                           :access-control-allow-origin [#"http://localhost:4200"]
                           :access-control-allow-methods [:get :put :post :delete]]
                          format-negotiate-middleware
@@ -31,7 +31,7 @@
    (ring/routes
     (ring/redirect-trailing-slash-handler)
     (ring/create-default-handler {:not-found (constantly {:status 404
-                                               :body "Route Not Found"})}))))
+                                                          :body "Route Not Found"})}))))
 
 (defn -main
   []
