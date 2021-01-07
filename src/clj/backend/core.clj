@@ -22,7 +22,7 @@
                        :body   "pong"})}]]
     {:data {:muuntaja   m/instance ; Can be configured with additional encoding options via m/create + { options }
             :middleware [[wrap-cors
-                          :access-control-allow-origin [#"http://localhost:4200"]
+                          :access-control-allow-origin [#"http://localhost:8080"]
                           :access-control-allow-methods [:get :put :post :delete]]
                          format-negotiate-middleware
                          format-request-middleware
