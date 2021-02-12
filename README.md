@@ -1,4 +1,4 @@
-#Full Stack Clojure/Clojruescript
+# Full Stack Clojure/Clojruescript
 
 A complete full stack clojure/clojurescript project template using:
 
@@ -10,7 +10,7 @@ A complete full stack clojure/clojurescript project template using:
 
 ---
 
-##Getting Started
+# Getting Started
 
 Built using `clojure 1.10.1.739` + `java 12.0.1`
 
@@ -23,7 +23,7 @@ Run `npm i` to install the javascript dependancies
 
 ---
 
-##Up & Running
+# Up & Running
 
 `npm run start` will start the `shadow-cljs` development server & bundle `main.css` based off the `tailwind.config.js`
 
