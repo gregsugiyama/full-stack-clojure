@@ -8,8 +8,6 @@ A complete full stack clojure/clojurescript project template using:
 - Http-kit/reitit as the REST server/router
 - Hugsql for interacting with the sql database.
 
----
-
 # Getting Started
 
 Built using `clojure 1.10.1.739` + `java 12.0.1`
@@ -20,8 +18,6 @@ In your console run, `mv .envrc_example .envrc` & enter your database informatio
 to load my enviroment variables, feel free to use any software you prefer).
 
 Run `npm i` to install the javascript dependancies
-
----
 
 # Up & Running
 
